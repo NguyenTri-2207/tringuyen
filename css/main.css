@@ -71,7 +71,7 @@
 /* <!-- home --> */
 .home {
     display: flex;
-    background-image: url('/img/img-base/banner.jpg');
+    background-image: url('./img/img-base/banner.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
