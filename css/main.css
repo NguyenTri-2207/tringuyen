@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu','sans-serif';
+}
+.header-navbar{
+    width: 100%;
+    position: fixed;
+    font-family: 'Ubuntu','sans-serif';
+    overflow: hidden;
+    
+}
+#menu{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 20px ;
+    transition: all 0.5s ease;
+    
+    
+}
+.sticky{
+    width: 100%;
+    padding: 20px 0;
+    background: #f33615;
+    color: #070707;
+    position: fixed;
+    z-index: 999;
+    
+   
+}
+
+#menu:first-child .active{
+    color: #f33615;
+    font-family: 'Ubuntu','sans-serif';
+    font-size: 23px;
+    font-weight: 600;
+    
+}
+#menu.sticky:first-child .active{
+    color: #e1f80c;
+}
+#menu-mobile{
+    display: none;
+}
+.header-navbar #menu li {
+    list-style: none;
+    display: inline-block;
+  
+}
+.header-navbar #menu li a{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    
+
+}
+.header-navbar #menu li a:hover{
+    color: #f33615;}
+
+.header-navbar #menu.sticky li a:hover{
+    color: rgb(255, 251, 0);
+}
+/* <!-- home --> */
+.home {
+    display: flex;
+    background-image: url('/img/img-base/banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    min-height: 500px;
+    font-family: 'Ubuntu','sans-serif';
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text1{
+    font-size: 27px;
+    color: #f33615 ;
+}
+.home .home-content .text2{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -5px;
+}
+.home .home-content .text3{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+.home .home-content .text3 span{
+    color: #f33615;
+}
+
+/* about */
+.about{
+    padding: 70px 100px;
+}
+.about .about-name{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins','sans-serif';
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.about .about-content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+.about-text{
+    width: 55%;
+    font-family: 'Ubuntu','sans-serif';
+    font-weight: 500;
+    color: #837f7f;
+
+}
+.about-text1{
+    color: #f33615;
+    font-size: 20px;
+}
+.about-text2{
+    font-size: 30px;
+}
+.about-text3{
+    color: #f33615;
+}
+.about-text4{
+    border-bottom: 1px solid #837f7f;
+    padding-bottom: 10px;
+}
+.about-img{
+    width: 40%;
+    height: 420px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.about-icon{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 10px;
+}
+.info-item{
+    margin: 15px 0px;
+}
+.info-item i{
+    font-size: 20px;
+    margin-right: 5px;
+    text-align: center;
+    width: 25px;
+    color: #f33615;
+}
+.info-item label{
+    color: #0f0f0f;
+}
+.about-button a button{
+    width: 170px;
+    height: 50px;
+    background-color: #f33615;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    margin-left: 10px;
+    font-weight: 500;
+    outline: none;
+}
+.about-button a button:hover{
+    background-color: #d1a81f;
+    color: #0f0f0f;
+    cursor: pointer;
+    /* border: 5px solid rgb(223, 226, 36); */
+}
+
+/* Experience */
+.experience{
+    padding: 0 100px;
+    font-family: 'Ubuntu','sans-serif';
+}
+.experience-title{
+    border-bottom: 2px solid #fb9929;
+
+}
+.experience-title h2{
+    background-color: #fb9929;
+    width: 140px;
+    border-radius: 2px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.experience-contain{
+    display: flex;
+    margin-top: 20px;
+}
+.experience-timeline{
+    font-size: 16px;
+    font-weight: 900;
+    width: 15%;
+}
+.experience-text ul li{
+    list-style: none;
+    margin-top: 5px;
+    font-weight:400;
+}
+/* project */
+.project{
+    padding: 30px 70px;
+    text-align: center;
+    font-family: 'Poppins','sans-serif';
+}
+.project-content{
+    display: flex;
+    padding: 0 10px;
+}
+.project-title{
+    padding: 10px 0px 70px 0;
+
+}
+.project1{
+    margin: auto;
+    width: 24%;
+    height: 450px;
+    border: 2px solid #10f1f1;
+    border-radius: 7px;
+    
+
+}
+
+.project1 img{
+    width: 100%;
+    height: 300px;
+    border-bottom: 5px solid #10f1f1;
+    border-radius: 7px;
+    
+}
+.pro-text{
+    line-height: 24px;
+    padding: 5px 0px;
+    height: 150px;
+}
+.project button{
+    border-radius: 10px;
+    outline: 0;
+    color: white;
+    background-color: rgb(255, 60, 1);
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    line-height: 20px;
+    margin-top: 10px;
+    
+   
+
+}
+@media only screen and (max-width: 947px) {
+    .project-content{
+        display: block;
+        padding: 0 10px;
+    }
+    .project1{
+        margin: auto;
+        width: 80%;
+        height: 450px;
+        border: 2px solid #10f1f1;
+        border-radius: 7px;
+        margin-top: 20px;
+        
+    
+    }
+}
+
+/* blog */
+.blog{
+    font-family: 'Poppins','sans-serif';
+    text-align: center;
+    margin-left: 50px;
+    
+}
+.blog-title{
+    font-weight: 600;
+    font-size: 35px;
+    padding: 20px 0px;
+}
+.blog-content{
+    display: grid;
+    grid-template-columns: 32% 32%  32% ;   
+    grid-template-rows: 500px;
+    margin: auto;
+    overflow: hidden;
+  
+}
+
+.blog1{
+    position: relative;
+    z-index: -1;
+    margin: 5px;
+    
+    font-family: 200;
+    
+}
+.blog1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.blog-content .blog-text {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    height: 120px;
+    bottom: 0px;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.blog-text span{
+    margin-left: 10px;
+    text-align: right;
+    
+    
+}
+.blog-text:hover{
+    background-color: #070707;
+}
+@media only screen and (max-width: 947px) {
+    .blog-content{
+        display: block;
+        margin: 20px 70px;
+        
+      
+    }
+}
+
+    /* <!-- skill --> */
+.skill-title{
+        font-size: 35px;
+        margin: 50px 0px;
+        text-align: center;
+        font-weight: 700;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+}
+.skill-icon{
+    text-align: center;
+    width: 5%;
+
+}
+.skill-icon i{
+    font-size: 30px;
+    padding-bottom: 9px;
+    color: #f33615;
+    text-align: center;
+}
+.skill-chart{
+    width: 60%;
+    
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+
+  .bar{
+    font-family: 'Ubuntu','sans-serif';
+    font-weight: 600;
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f33615;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #f5bc12;
+  }
+  .bar.back::before{
+    background-color: #10f1f1;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(50% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(75% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(90% - 10px);
+  }
+  
+/* contact-title */
+.conTact{
+    padding: 10px 70px;
+    font-size: 20px;
+}
+.contact-title{
+    font-size: 35px;
+    margin: 50px 0px;
+    text-align: center;
+    font-weight: 700;
+}
+.myLocation-text{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+   
+}
+.getInTouch{
+    padding: 20px 0px;
+}
+.getInTouch p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.getInTouch-content{
+    display: flex;
+    justify-content: space-between;
+    color: #7a6464;
+    font-family:'Ubuntu','sans-serif';
+    font-weight: 400; 
+    align-items: center;
+}
+.getInTouch-content i{
+    color: #f33615;
+    padding-top: 50px;
+}
+.getInTouch-content a{
+    color: #837f7f;
+    text-decoration: none;
+    
+}
+.content-item{
+    background-color: #eaeff3;
+    width: 32%;
+    text-align: center;
+    height: 200px; 
+    border-radius: 10px;
+    /* line-height: 35px; */
+}
+.forms{
+    width: 100%;
+    
+}
+.contacform .text{
+    padding-top: 20px;
+    font-weight: 600;
+}
+.forms input{
+    width: 49.5%;
+    margin: 10px 0px;
+    height: 50px;
+    border: 2px solid rgb(182, 177, 177);
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+}
+.forms #email{
+    float: right;
+}
+.forms #YouSubject{
+    width: 100%;
+}
+.forms #Yourmessage{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 15px;
+    border: 2px solid rgb(182, 177, 177);
+    outline: none;
+}
+.forms #form-btn{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background-color: #f33615;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.forms #sent{
+    height: 40px;
+    color: black;
+    background-color: #25c738;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 40px;
+    display: none;
+}
+/* footer */
+.footer{
+    height: 50px;
+    text-align: center;
+    background-color: #363636;
+    line-height: 50px;
+    
+}
+.footer-right{
+    float: right;
+}
+.footer-right a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 10px;
+    
+    color: #f33615;
+}
+.footer-right #up-top{
+    
+    font-size: 35px;
+    margin: 0px 10px 0px 30px;
+    
+    
+    color: #f33615;
+}
+.footer-left{
+    color: #eaeff3;
+    font-weight: 600;
+    text-align: center;
+}
+/*  */
+/* Moblie  width < 947px*/
+@media only screen and (max-width: 947px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    #menu {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        padding-top: 50px;
+        display: none;
+    }
+    #menu.oke {
+        display: block;
+    }
+
+    .header-navbar #menu li{
+        
+        padding-top: 10px;
+        display: block;
+        padding-bottom: 40px;
+        background-color: #000000;
+        
+    }
+  
+    .sticky{
+       display: none;
+    }
+    #menu-mobile{
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        float: right;
+        padding:10px 20px 0 0;
+        position: relative;
+        
+    }
+    .home .home-content .text1{
+        font-size: 20px;
+    }
+    .home .home-content .text2{
+        font-size: 40px;
+        font-weight: 500;
+        margin-left: -5px;
+    }
+    .home .home-content .text3{
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    /* about */
+    .about{
+        padding: 20px;
+    }
+    .about .about-name{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .about .about-content{
+        display: block;
+        margin: auto;
+        width: 100%;
+        
+        
+    }
+    .about-img{
+        width: 100%;
+        height: 420px;
+        border: 5px solid black;
+        border-radius: 5px;
+    }
+    .about-text{
+        width: 100%;
+        font-family: 'Ubuntu','sans-serif';
+        font-weight: 400;
+        color: #837f7f;
+    
+    }
+    .about-icon{
+        display: block;
+        padding-top: 10px;
+    }
+
+     /* Experience */
+    .experience{
+        padding: 0 10px;
+        font-family: 'Ubuntu','sans-serif';
+    }
+    .experience-timeline{
+        font-size: 16px;
+        font-weight: 900;
+        width: 35%;
+    }
+    /* <!-- skill --> */
+    .skill-icon{
+        text-align: center;
+        width: 10%;
+    
+    }
+    .skill-chart{
+        width: 70%;
+        
+    }
+      /* contact-title */
+      .getInTouch-content{
+          display: block;
+    }
+    .content-item{
+        background-color: #eaeff3;
+        width: 100%;
+        height: 200px; 
+        border-radius: 10px;
+        margin: 10px 0px 30px 0px;
+        
+    }
+}
