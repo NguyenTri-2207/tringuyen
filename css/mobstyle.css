@@ -1,0 +1,147 @@
+/* Moblie  width < 567px*/
+@media only screen and (max-width: 567px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    #menu {
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        padding-top: 50px;
+        display: none;
+    }
+    #menu.oke {
+        display: block;
+    }
+
+    .header-navbar #menu li{
+        
+        padding-top: 10px;
+        display: block;
+        padding-bottom: 40px;
+        background-color: #000000;
+        
+    }
+  
+    .sticky{
+       display: none;
+    }
+    #menu-mobile{
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        float: right;
+        padding:10px 20px 0 0;
+        position: relative;
+        
+    }
+    .home .home-content .text1{
+        font-size: 20px;
+    }
+    .home .home-content .text2{
+        font-size: 40px;
+        font-weight: 500;
+        margin-left: -5px;
+    }
+    .home .home-content .text3{
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    /* about */
+    .about{
+        padding: 20px;
+        display: block;
+    }
+    .about .about-name{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .about .about-content{
+        display: block;
+        margin: auto;
+        width: 100%;
+        
+        
+    }
+    .about-img{
+        width: 100%;
+        height: 420px;
+        border: 5px solid black;
+        border-radius: 5px;
+    }
+    .about-text{
+        width: 100%;
+        font-family: 'Ubuntu','sans-serif';
+        font-weight: 400;
+        color: #837f7f;
+    
+    }
+    .about-icon{
+        display: block;
+        padding-top: 10px;
+    }
+
+     /* Experience */
+    .experience{
+        font-size: 14px;
+        padding: 0 10px;
+        font-family: 'Ubuntu','sans-serif';
+    }
+    .experience-timeline{
+       
+        font-weight: 900;
+        width: 35%;
+    }
+    /* <!-- skill --> */
+    .skill-icon{
+        text-align: center;
+        width: 10%;
+    
+    }
+    .skill-chart{
+        width: 70%;
+        
+    }
+      /* contact-title */
+      .getInTouch-content{
+          display: block;
+        
+    }
+    .myLocation{
+        display: none;
+    }
+    .content-item{
+        background-color: #eaeff3;
+        width: 100%;
+        height: 200px; 
+        border-radius: 10px;
+        margin: 10px 0px 30px 0px;
+        
+    }
+}
+@media only screen and (max-width: 947px) {
+    .project-content{
+        display: block;
+        padding: 0 10px;
+    }
+    .project1{
+        margin: auto;
+        width: 80%;
+        height: 450px;
+        border: 2px solid #10f1f1;
+        border-radius: 7px;
+        margin-top: 20px;
+        
+    
+    }
+}
+@media only screen and (max-width: 567px) {
+    .blog-content{
+        display: block;
+        margin: 20px 70px;
+        
+      
+    }
+}
